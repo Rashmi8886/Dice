@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  min-height: 80vh;
+  background: gainsboro;
+}
+
+.dice-game {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container,
+.board-container {
+  width: 60%;
+  height: 50vh;
+  background: #ffffff;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.board-container {
+  width: 30%;
+  height: 70vh;
+  background: #ffffff;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: black 0px 7px 29px 0px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+}
+
+.form-heading {
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.input-boxes {
+  margin-top: 30px;
+  width: 60%;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+
+.input-group input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.input-group input:focus {
+  border-color: black;
+}
+
+.input-group i {
+  position: absolute;
+  color: black
+  font-size: 17px;
+}
+
+.button {
+  margin-top: 40px;
+}
+
+.button input {
+  color: #ffffff;
+  background: gray;
+  border-radius: 5px;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.button input:hover {
+  background: black;
+}
+
+.board-container {
+  display: none;
+}
+
+.board {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.player1,
+.player2 {
+  width: 50%;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.player1 {
+  background: #f5f5f5;
+}
+
+.heading {
+  font-size: 6vh;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: center;
+}
+
+.score {
+  color: black;
+  font-size: 10vh;
+}
+
+.dice {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dice img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#player-1-button,
+#player-2-button {
+  width: 50%;
+}
+
+#player-1-button input[disabled],
+#player-2-button input[disabled] {
+  background: #f5f5f5;
+  color: #000000;
+  cursor: not-allowed;
+}
+
+.winner {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.5;
+  background: url("winner.gif");
+  z-index: 100;
+}
+
+.restart {
+  padding: 10px;
+  border-top: 150px;
+}
+
+.restart li a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 20px;
+  margin: 25px;
+  background-color: black;
+  font-weight: 500;
+}
+.restart1 {
+  background-color: black;
+  color: #f5f5f5;
+  margin-left: 1.4rem;
+  margin-top: 2rem;
+  width: 80px;
+  height: 50px;
+  padding: 5px;
+}
